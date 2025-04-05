@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  dynimic-dns:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./:/var/www/html
+    environment:
+      - PHP_MEMORY_LIMIT=5120M
+    networks:
+      - dynimic-dns-network
+
+networks:
+  dynimic-dns-network:
+    driver: bridge

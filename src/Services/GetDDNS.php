@@ -34,7 +34,11 @@ class GetDDNS extends DDNS
             'accept: application/json',
             'API-Key: ' . $this->getApiKey(),
         ]);
-        $response = json_decode(curl_exec($ch));
+        $response = curl_exec($ch);
+        if($response == false) {
+            throw new Exception(curl_error($ch));
+        }
+        $response = json_decode($response);
         curl_close($ch);
 
         if (!isset($response->statusCode) || $response->statusCode !== 200) {
