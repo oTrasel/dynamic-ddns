@@ -38,5 +38,5 @@ To do this, a CRON must be configured to run from time to time, where it will ch
 #### Example of configuration:
 ##### This example will run every 2 hours
 ```
-echo "0 */2 * * docker exec -it dynimic-dns-dynimic-dns-1 php index.php" > /etc/cron.d/updateIP
+    echo "0 */2 * * docker exec -it dynimic-dns-dynimic-dns-1 php index.php" > /etc/cron.d/updateIP
 ```
