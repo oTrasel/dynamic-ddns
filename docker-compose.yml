@@ -11,7 +11,7 @@ services:
       - PHP_MEMORY_LIMIT=5120M
     networks:
       - dynimic-dns-network
-
+    restart: always
 networks:
   dynimic-dns-network:
     driver: bridge
