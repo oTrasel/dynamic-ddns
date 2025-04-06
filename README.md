@@ -17,7 +17,7 @@ To do this, a CRON must be configured to run from time to time, where it will ch
 
 #### Clone the Repository
 ```
-    git clone https://github.com/oTrasel/dynimic-dns
+    git clone https://github.com/oTrasel/dynamic-ddns
 ```
 #### In the repository directory, run:
 
