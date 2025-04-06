@@ -1,5 +1,5 @@
 
-# Dynimic DDNS
+# Dynamic DDNS
 
 Project that connects to DYNU (https://www.dynu.com) to dynamically configure the ddns IP.
 
