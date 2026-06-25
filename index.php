@@ -1,4 +1,5 @@
 <?php
+date_default_timezone_set('America/Sao_Paulo');
 
 require __DIR__.'/vendor/autoload.php';
 
@@ -14,6 +15,7 @@ $dotenv->load();
 $verificaIp = new VerifyIp();
 $verificaIp->verificaIp();
 $isNovoIp = $verificaIp->isNovoIp();
+echo '-----------------------------------------------------------------------' . PHP_EOL;
 echo '[' . date('d/m/Y H:i:s') . '] INICIANDO VERIFICACAO' . PHP_EOL;
 if ($isNovoIp) {
     $apiKey = $_ENV['API_KEY'];
